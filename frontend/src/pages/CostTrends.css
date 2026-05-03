@@ -1,0 +1,145 @@
+.trends-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: var(--text-h);
+}
+
+.time-filter {
+  display: flex;
+  gap: 10px;
+}
+
+.time-btn {
+  padding: 8px 16px;
+  border: 2px solid var(--border);
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: var(--text);
+}
+
+.time-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.time-btn.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.loading,
+.error {
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.error {
+  background: var(--accent-bg);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+}
+
+.error h2 {
+  margin: 0 0 10px 0;
+  color: var(--accent);
+}
+
+.chart-section {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chart-section h2 {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: var(--text-h);
+}
+
+.stats-section {
+  margin-top: 40px;
+}
+
+.stats-section h2 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  color: var(--text-h);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-box {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.stat-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .time-filter {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
