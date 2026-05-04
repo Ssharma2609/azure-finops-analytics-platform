@@ -98,6 +98,30 @@ Implemented using:
 * Nginx
 
 ---
+## 🖼️ Screenshots
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Cost Trends & Forecast
+![Trends](./screenshots/cost-trends-7.png)
+![Trends](./screenshots/cost-trends-30.png)
+![Trends](./screenshots/cost-trends-90.png)
+![Forecast](./screenshots/forecast.png)
+
+### Services Breakdown
+![Services](./screenshots/services-chart.png)
+![Services](./screenshots/services-table.png)
+
+### Alerts & Recommendations
+![Alerts](./screenshots/alerts.png)
+
+### Swagger UI
+![Swagger](./screenshots/swagger.png)
+
+
+---
+
 
 # Architecture Diagram
 

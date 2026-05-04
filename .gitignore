@@ -30,6 +30,8 @@ postgres_data/
 # Celery
 # =========================
 celerybeat-schedule
+celerybeat-schedule-shm
+celerybeat-schedule-wal
 
 # =========================
 # OS Files
@@ -58,3 +60,7 @@ htmlcov/
 # =========================
 build/
 dist/
+
+
+# Local nested project (very important)
+azure-cost-simulator/
